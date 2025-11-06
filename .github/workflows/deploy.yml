@@ -17,7 +17,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - run: docker build -t bargolan/react-docker -f Dockerfile.dev .
-      - run: docker run -e CI=true bargolan/react-docker npm run test3
+      - run: docker run -e CI=true bargolan/react-docker npm run test
 
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
