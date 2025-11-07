@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          learn react
+          Deploy through feature branch
         </a>
       </header>
     </div>
